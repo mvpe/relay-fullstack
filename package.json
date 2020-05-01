@@ -9,7 +9,9 @@
     "build-server": "cross-env NODE_ENV=production ./node_modules/.bin/babel ./server --out-dir ./build",
     "lint": "eslint client server",
     "heroku-postbuild": "cross-env NODE_ENV=production webpack --config webpack.config.js && cross-env NODE_ENV=production ./node_modules/.bin/babel ./server --out-dir ./lib",
-    "clean": "rm -rf build && mkdir build"
+    "clean": "rm -rf build && mkdir build",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "pre-commit": "lint",
   "repository": {
@@ -91,6 +93,8 @@
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "2.2.0",
-    "webpack-dev-server": "2.2.1"
-  }
+    "webpack-dev-server": "2.2.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
