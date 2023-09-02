@@ -1,0 +1,51 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - babel-cli > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2023-09-02T15:20:37.626Z'
+        id: 'npm:debug:20170905'
+        path: babel-cli > chokidar > fsevents > node-pre-gyp > tar-pack > debug
+    - webpack-dev-server > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2023-09-02T15:20:37.626Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          webpack-dev-server > chokidar > fsevents > node-pre-gyp > tar-pack >
+          debug
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2023-09-02T15:20:37.626Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          webpack > watchpack > chokidar > fsevents > node-pre-gyp > tar-pack >
+          debug
+    - favicons-webpack-plugin > webpack > watchpack > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2023-09-02T15:20:37.626Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          favicons-webpack-plugin > webpack > watchpack > chokidar > fsevents >
+          node-pre-gyp > tar-pack > debug
+  'npm:ms:20170412':
+    - babel-cli > chokidar > fsevents > node-pre-gyp > tar-pack > debug > ms:
+        patched: '2023-09-02T15:20:37.626Z'
+        id: 'npm:ms:20170412'
+        path: babel-cli > chokidar > fsevents > node-pre-gyp > tar-pack > debug > ms
+    - webpack-dev-server > chokidar > fsevents > node-pre-gyp > tar-pack > debug > ms:
+        patched: '2023-09-02T15:20:37.626Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          webpack-dev-server > chokidar > fsevents > node-pre-gyp > tar-pack >
+          debug > ms
+    - webpack > watchpack > chokidar > fsevents > node-pre-gyp > tar-pack > debug > ms:
+        patched: '2023-09-02T15:20:37.626Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          webpack > watchpack > chokidar > fsevents > node-pre-gyp > tar-pack >
+          debug > ms
+    - favicons-webpack-plugin > webpack > watchpack > chokidar > fsevents > node-pre-gyp > tar-pack > debug > ms:
+        patched: '2023-09-02T15:20:37.626Z'
+        id: 'npm:ms:20170412'
+        path: >-
+          favicons-webpack-plugin > webpack > watchpack > chokidar > fsevents >
+          node-pre-gyp > tar-pack > debug > ms
